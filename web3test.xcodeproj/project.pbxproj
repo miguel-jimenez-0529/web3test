@@ -12,6 +12,9 @@
 		52F4F04A207BEFC7005DB2AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52F4F048207BEFC7005DB2AF /* Main.storyboard */; };
 		52F4F04C207BEFC8005DB2AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52F4F04B207BEFC8005DB2AF /* Assets.xcassets */; };
 		52F4F04F207BEFC8005DB2AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52F4F04D207BEFC8005DB2AF /* LaunchScreen.storyboard */; };
+		52F4F057207C0767005DB2AF /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F4F056207C0767005DB2AF /* Test.swift */; };
+		52F4F059207C0F1E005DB2AF /* bbi.json in Resources */ = {isa = PBXBuildFile; fileRef = 52F4F058207C0F1E005DB2AF /* bbi.json */; };
+		B58880132B89DAFAD0032B2E /* Pods_web3test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABDE573FDE9E21DEF088DED0 /* Pods_web3test.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,11 @@
 		52F4F04B207BEFC8005DB2AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		52F4F04E207BEFC8005DB2AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		52F4F050207BEFC8005DB2AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52F4F056207C0767005DB2AF /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
+		52F4F058207C0F1E005DB2AF /* bbi.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = bbi.json; sourceTree = "<group>"; };
+		A74C884CF48E54D56A6B3738 /* Pods-web3test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-web3test.release.xcconfig"; path = "Pods/Target Support Files/Pods-web3test/Pods-web3test.release.xcconfig"; sourceTree = "<group>"; };
+		ABDE573FDE9E21DEF088DED0 /* Pods_web3test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_web3test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B96B2B282C9B347CAC1E6A2E /* Pods-web3test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-web3test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-web3test/Pods-web3test.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B58880132B89DAFAD0032B2E /* Pods_web3test.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +49,8 @@
 			children = (
 				52F4F043207BEFC7005DB2AF /* web3test */,
 				52F4F042207BEFC7005DB2AF /* Products */,
+				CAC5F9278BF500285EB10E35 /* Pods */,
+				F21DFB439A7F44BEECFECF71 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +65,33 @@
 		52F4F043207BEFC7005DB2AF /* web3test */ = {
 			isa = PBXGroup;
 			children = (
+				52F4F058207C0F1E005DB2AF /* bbi.json */,
 				52F4F044207BEFC7005DB2AF /* AppDelegate.swift */,
 				52F4F046207BEFC7005DB2AF /* ViewController.swift */,
 				52F4F048207BEFC7005DB2AF /* Main.storyboard */,
 				52F4F04B207BEFC8005DB2AF /* Assets.xcassets */,
 				52F4F04D207BEFC8005DB2AF /* LaunchScreen.storyboard */,
 				52F4F050207BEFC8005DB2AF /* Info.plist */,
+				52F4F056207C0767005DB2AF /* Test.swift */,
 			);
 			path = web3test;
+			sourceTree = "<group>";
+		};
+		CAC5F9278BF500285EB10E35 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B96B2B282C9B347CAC1E6A2E /* Pods-web3test.debug.xcconfig */,
+				A74C884CF48E54D56A6B3738 /* Pods-web3test.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F21DFB439A7F44BEECFECF71 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ABDE573FDE9E21DEF088DED0 /* Pods_web3test.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 52F4F053207BEFC8005DB2AF /* Build configuration list for PBXNativeTarget "web3test" */;
 			buildPhases = (
+				D41ADF62C43CEA657CFEBA78 /* [CP] Check Pods Manifest.lock */,
 				52F4F03D207BEFC7005DB2AF /* Sources */,
 				52F4F03E207BEFC7005DB2AF /* Frameworks */,
 				52F4F03F207BEFC7005DB2AF /* Resources */,
+				DFB348A737BABEF03D758C8F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,12 +155,70 @@
 			buildActionMask = 2147483647;
 			files = (
 				52F4F04F207BEFC8005DB2AF /* LaunchScreen.storyboard in Resources */,
+				52F4F059207C0F1E005DB2AF /* bbi.json in Resources */,
 				52F4F04C207BEFC8005DB2AF /* Assets.xcassets in Resources */,
 				52F4F04A207BEFC7005DB2AF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D41ADF62C43CEA657CFEBA78 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-web3test-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DFB348A737BABEF03D758C8F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-web3test/Pods-web3test-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Alamofire-Synchronous/Alamofire_Synchronous.framework",
+				"${BUILT_PRODUCTS_DIR}/BigInt/BigInt.framework",
+				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/SipHash/SipHash.framework",
+				"${BUILT_PRODUCTS_DIR}/libsodium/libsodium.framework",
+				"${BUILT_PRODUCTS_DIR}/secp256k1_ios/secp256k1_ios.framework",
+				"${BUILT_PRODUCTS_DIR}/web3.swift/web3.framework",
+				"${BUILT_PRODUCTS_DIR}/web3swift/web3swift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire_Synchronous.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BigInt.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SipHash.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/libsodium.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/secp256k1_ios.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/web3.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/web3swift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-web3test/Pods-web3test-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		52F4F03D207BEFC7005DB2AF /* Sources */ = {
@@ -137,6 +227,7 @@
 			files = (
 				52F4F047207BEFC7005DB2AF /* ViewController.swift in Sources */,
 				52F4F045207BEFC7005DB2AF /* AppDelegate.swift in Sources */,
+				52F4F057207C0767005DB2AF /* Test.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +369,7 @@
 		};
 		52F4F054207BEFC8005DB2AF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B96B2B282C9B347CAC1E6A2E /* Pods-web3test.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -296,6 +388,7 @@
 		};
 		52F4F055207BEFC8005DB2AF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A74C884CF48E54D56A6B3738 /* Pods-web3test.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
